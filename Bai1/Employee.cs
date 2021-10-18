@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Bai1
 {
-    abstract class Employee
+    public abstract class Employee
     {
         private int _id;
         public int ID
@@ -24,6 +24,10 @@ namespace Bai1
                 else
                     _name = value;
             }
+        }
+
+        protected Employee()
+        {
         }
 
         protected Employee(int id)
